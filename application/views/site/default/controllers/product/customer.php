@@ -61,7 +61,54 @@ $CI->load->helper('form');
 		</table>
 
         <div class="form-customer">
-
+	        <fieldset>
+		        <legend>Thông tin người đặt</legend>
+		        <div class="control-group">
+			        <label class="control-label" for="cus_name">Họ tên</label>
+			        <div class="controls">
+				        <input type="text" id="cus_name" name="cus[name]" placeholder="Họ tên">
+			        </div>
+		        </div>
+		        <div class="control-group">
+			        <label class="control-label" for="cus_address">Địa chỉ</label>
+			        <div class="controls">
+				        <input type="password" id="cus_address" name="cus[address]" placeholder="Địa chỉ">
+			        </div>
+		        </div>
+		        <div class="control-group">
+			        <label class="control-label" for="cus_phone">Điện thoại</label>
+			        <div class="controls">
+				        <input type="password" id="cus_phone" name="cus[phone]" placeholder="Điện thoại">
+			        </div>
+		        </div>
+		        <div class="control-group">
+			        <label class="control-label" for="email">Email</label>
+			        <div class="controls">
+				        <input type="password" id="cus_email" name="cus[email]" placeholder="Email">
+			        </div>
+		        </div>
+	        </fieldset>
+	        <fieldset>
+		        <legend>Thông tin người nhận hàng</legend>
+		        <div class="control-group">
+			        <label class="control-label" for="cus_recipient">Họ tên</label>
+			        <div class="controls">
+				        <input type="text" id="cus_recipient" name="cus[recipient]" placeholder="Họ tên">
+			        </div>
+		        </div>
+		        <div class="control-group"><!--zzz-->
+			        <label class="control-label" for="cus_recipient">Địa chỉ</label>
+			        <div class="controls">
+				        <input type="text" id="cus_recipient" name="cus[recipient]" placeholder="Địa chỉ">
+			        </div>
+		        </div>
+		        <div class="control-group"><!--zzz-->
+			        <label class="control-label" for="cus_recipient">Điện thoại</label>
+			        <div class="controls">
+				        <input type="text" id="cus_recipient" name="cus[recipient]" placeholder="Điện thoại">
+			        </div>
+		        </div>
+	        </fieldset>
         </div>
 
 		<p class="form-btn">

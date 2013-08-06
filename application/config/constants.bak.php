@@ -73,7 +73,7 @@ if(!defined('CACHE_VIEW')) define('CACHE_VIEW', FALSE);	//zzz chua lam xong cach
 
 if(!defined('ASSETS_OPTIMIZATION')) define('ASSETS_OPTIMIZATION', 15);
 
-if(!defined('ASSETS_VERSION')) define('ASSETS_VERSION', '4');
+if(!defined('ASSETS_VERSION')) define('ASSETS_VERSION', '1');
 
 if(!defined('REWRITE_SUFFIX')) define('REWRITE_SUFFIX', '.html');
 

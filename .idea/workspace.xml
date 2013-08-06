@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0037c332-2830-47bb-9a16-228358d72b5f" name="Default" comment="" />
+    <list default="true" id="0037c332-2830-47bb-9a16-228358d72b5f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/site/default/js/cart.min.js" afterPath="$PROJECT_DIR$/application/views/site/default/js/cart.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/constants.bak.php" afterPath="$PROJECT_DIR$/application/config/constants.bak.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/site/default/controllers/product/customer.php" afterPath="$PROJECT_DIR$/application/views/site/default/controllers/product/customer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="ci.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375774395862" ignored="false" />
+    <file path="/Dummy.txt" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375785001641" ignored="false" />
     <file path="/a.dummy" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375345575838" ignored="false" />
     <file path="/MY_Cart.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375158902372" ignored="false" />
     <file path="/Product_Controller.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375168760639" ignored="false" />
@@ -15,7 +20,7 @@
     <file path="/hooks.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375162041065" ignored="false" />
     <file path="/SYS_Post.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375163152149" ignored="false" />
     <file path="/success.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375164082890" ignored="false" />
-    <file path="/customer.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375254969709" ignored="false" />
+    <file path="/customer.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375785636929" ignored="false" />
     <file path="/user.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375255632683" ignored="false" />
     <file path="/default.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375256216469" ignored="false" />
     <file path="/Theme.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375256147367" ignored="false" />
@@ -48,7 +53,7 @@
       <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/config/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="74" selection-start="2261" selection-end="2261" vertical-scroll-proportion="-0.65384614">
+            <state line="55" column="74" selection-start="2261" selection-end="2261" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -66,7 +71,7 @@
       <file leaf-file-name="customer.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/site/default/controllers/product/customer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="0" selection-start="1743" selection-end="1743" vertical-scroll-proportion="0.4846154">
+            <state line="107" column="107" selection-start="3799" selection-end="3799" vertical-scroll-proportion="0.64176244">
               <folding />
             </state>
           </provider>
@@ -90,7 +95,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/application/config/email.php" />
         <option value="$PROJECT_DIR$/application/config/routes.php" />
         <option value="$PROJECT_DIR$/application/views/admin/js/log.txt" />
         <option value="$PROJECT_DIR$/application/views/admin/css/cupertino/log.txt" />
@@ -104,8 +108,9 @@
         <option value="$PROJECT_DIR$/application/controllers/Category_Controller.php" />
         <option value="$PROJECT_DIR$/application/views/admin/js/valid.js" />
         <option value="$PROJECT_DIR$/application/views/admin/css/valid.css" />
-        <option value="$PROJECT_DIR$/application/views/site/default/controllers/product/customer.php" />
         <option value="$PROJECT_DIR$/application/views/admin/js/alert.js" />
+        <option value="$PROJECT_DIR$/application/config/constants.bak.php" />
+        <option value="$PROJECT_DIR$/application/views/site/default/controllers/product/customer.php" />
       </list>
     </option>
   </component>
@@ -142,7 +147,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -189,12 +193,31 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ci" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ci" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="cache" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -254,13 +277,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3006088" sideWeight="0.6700855" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3105023" sideWeight="0.6700855" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -336,16 +359,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/views/admin/css/valid.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="7578" selection-end="7578" vertical-scroll-proportion="0.31501833" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/site/default/js/login_module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="19" selection-start="123" selection-end="131" vertical-scroll-proportion="0.093406595" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/admin/css/alert.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -416,14 +429,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/cache/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/constants.bak.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="69" selection-start="3145" selection-end="3145" vertical-scroll-proportion="0.9348659">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/constants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="75" selection-end="117" vertical-scroll-proportion="0.0651341">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/site/default/controllers/product/customer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="0" selection-start="1743" selection-end="1743" vertical-scroll-proportion="0.4846154">
+        <state line="107" column="107" selection-start="3799" selection-end="3799" vertical-scroll-proportion="0.64176244">
           <folding />
         </state>
       </provider>
