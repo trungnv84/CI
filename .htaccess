@@ -1,0 +1,8 @@
+RewriteEngine on
+#RewriteBase /
+RewriteCond $1 ^application/third_party/tinymce/jscripts/tiny_mce/plugins/imagemanager/.*\.php(\?.*)?$
+RewriteRule ^(.*)$ index.php?/$1 [L]
+RewriteCond $1 ^thumb_.*_.*/.*(\.jpg|\.jpeg|\.png|\.gif)(\?.*)?$
+RewriteRule ^(.*)$ index.php?/$1 [L]
+RewriteCond $1 !^((index\.php|images|application/third_party/tinymce/|robots\.txt|.*\.js|.*\.css|.*\.jpg|.*\.jpeg|.*\.png|.*\.gif|.*\.swf)(\?.*)?)
+RewriteRule ^(.*)$ index.php?/$1 [L]

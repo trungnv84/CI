@@ -1,0 +1,41 @@
+.menu, .menu ul {
+    background: #ffffff;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    position: relative;
+}
+.menu li a {
+    display: block;
+    white-space: nowrap;
+}
+.menu li ul {
+    display: none;
+}
+.menu li:hover > ul {
+    display: block;
+}
+
+/*###########################*/
+
+.nav .menu > li {
+    float: left;
+}
+.nav ul li ul {
+    left: 0;
+    position: absolute;
+}
+.nav ul li ul ul {
+    left: 100%;
+    top: 0;
+}
+
+/*###########################*/
+
+.ver ul li ul {
+    left: 100%;
+    top: 0;
+    position: absolute;
+}

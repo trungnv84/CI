@@ -1,0 +1,2 @@
+<?php if(!defined('BASEPATH')) exit('No direct script access allowed')?>
+<p id="admin_load_time" align="center">Page rendered in <strong>{elapsed_time}</strong> seconds. Memory used <strong>{memory_usage}</strong>.</p>

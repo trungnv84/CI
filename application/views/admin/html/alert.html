@@ -1,0 +1,616 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Demo alert</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="docs.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/alert.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../../bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/alert.js"></script>
+
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function () {
+            $("#sa1").click(function () {
+                $.alert("", "Message", "\"<b>Example</b>\" button is clicked", "message", 0);
+            });
+            $("#sa2").click(function () {
+                $.alert("", "Message", "\"<b>Example</b>\" button is clicked", "message", 2000);
+            });
+            $("#sa3").click(function () {
+                $.alert("only", "Message", "\"<b>Example</b>\" button is clicked", "message", 0);
+                $.alert("only", "Message", "\"<b>Example</b>\" button is clicked, again", "message", 0);
+            });
+            $("#sa4").click(function () {
+                $.alert("anything4", "Message", "\"<b>Example 2</b>\" button is clicked", "message", 0);
+                $.alert("anything4", "Message", "\"<b>Example 2</b>\" button is clicked, again", "message", 0);
+            });
+            $("#sa5").click(function () {
+                $.alert("", "Message", "\"<b>Message</b>\" button is clicked", "message", 0);
+            });
+            $("#sa6").click(function () {
+                $.alert("", "Information", "\"<b>Information</b>\" button is clicked", "info", 0);
+            });
+            $("#sa7").click(function () {
+                $.alert("", "Success", "\"<b>Success</b>\" button is clicked", "success", 0);
+            });
+            $("#sa8").click(function () {
+                $.alert("", "Warning", "\"<b>Warning, Alert</b>\" button is clicked", "alert", 0);
+            });
+            $("#sa9").click(function () {
+                $.alert("", "Error", "\"<b>Error, Danger</b>\" button is clicked", "error", 0);
+            });
+
+            $("#sa10").click(function () {
+                $.alert("", "", "\"<b>Example</b>\" button is clicked", "message", 0);
+            });
+            $("#sa11").click(function () {
+                $.alert("anything11", "", "\"<b>Example</b>\" button is clicked", "warning", 0);
+            });
+            $("#sa12").click(function () {
+                $.alert("", "", "\"<b>Example</b>\" button is clicked", "success", 3500);
+            });
+
+            $("#sa13").click(function () {
+                $.alert("", "", "\"<b>Example</b>\" button is clicked", "message", 0, "#msw");
+            });
+            $("#sa14").click(function () {
+                $.alert("anything14", "", "\"<b>Example</b>\" button is clicked", "warning", 0, "#msw");
+            });
+            $("#sa15").click(function () {
+                $.alert("", "Success", "\"<b>Example</b>\" button is clicked", "success", 3500, "#msw");
+            });
+
+            $("#sa16").click(function () {
+                $.alert("", "Confirm", "\"<b>Example</b>\" button is clicked", "message", 0, "", [
+                    {
+                        label:"Ok",
+                        click:function () {
+                            alert("Accept");
+                            this.alertEnd();
+                        }
+                    },
+                    {
+                        label:"Cancel",
+                        click:function () {
+                            this.alertEnd();
+                        }
+                    }
+                ]);
+            });
+            $("#sa17").click(function () {
+                $.alert("anything17", "Confirm", "\"<b>Example</b>\" button is clicked", "warning", 0, "#msw2", [
+                    {
+                        label:"Ok",
+                        click:function () {
+                            alert("Accept");
+                            this.alertEnd();
+                        }
+                    },
+                    {
+                        label:"Cancel",
+                        click:function () {
+                            this.alertEnd();
+                        }
+                    }
+                ]);
+            });
+            $("#sa18").click(function () {
+                $.alert("", "", "\"<b>Example</b>\" button is clicked", "success", 3500, "", [
+                    {
+                        label:"Ok",
+                        click:function () {
+                            alert("Accept");
+                            this.alertEnd();
+                        }
+                    },
+                    {
+                        label:"Cancel",
+                        click:function () {
+                            this.alertEnd();
+                        }
+                    }
+                ]);
+            });
+
+            $("#sa19").click(function () {
+                $.alert("", "Message", "\"<b>Example</b>\" button is clicked", "message", 0, "", "", {
+                    show:function () {
+                        alert("Message show.");
+                    },
+                    hide:function () {
+                        alert("Message hide.");
+                    }
+                });
+            });
+
+            $("#sa20").click(function () {
+                $.alert("", "Message", "\"<b>Example</b>\" button is clicked", "message", 0, "", [
+                    {
+                        label: "Yes",
+                        click: function() {
+                            this.button = "Yes";
+                            this.alertEnd();
+                        }
+                    },
+                    {
+                        label: "No",
+                        click: function() {
+                            this.button = "No";
+                            this.alertEnd();
+                        }
+                    },
+                    {
+                        label: "Cancel",
+                        click: function() {
+                            this.button = "Cancel";
+                            this.alertEnd();
+                        }
+                    }
+                ], {
+                    show:function () {
+                        this.button = false;
+                    },
+                    hide:function () {
+                        alert(this.button);
+                    }
+                });
+            });
+        });
+
+    </script>
+
+</head>
+<body>
+<link href="prettify.css" rel="stylesheet" type="text/css"/>
+<div class="span4 bs-docs-sidebar">
+    <ul class="nav nav-list bs-docs-sidenav affix">
+        <li><a href="#alert_popup"><i class="icon-chevron-right"></i> Simple alert</a></li>
+        <li><a href="#auto_hide"><i class="icon-chevron-right"></i> Auto hide</a></li>
+        <li><a href="#alert_key"><i class="icon-chevron-right"></i> Alert one time</a></li>
+        <li><a href="#alert_type"><i class="icon-chevron-right"></i> Alert Type</a></li>
+        <li><a href="#alert_top"><i class="icon-chevron-right"></i> Top alert</a></li>
+        <li><a href="#alert_flat"><i class="icon-chevron-right"></i> Flat alert</a></li>
+        <li><a href="#popup_window"><i class="icon-chevron-right"></i> Confirm popup</a></li>
+        <li><a href="#events"><i class="icon-chevron-right"></i> Events</a></li>
+        <li><a href="#what_button"><i class="icon-chevron-right"></i> Button is clicked?</a></li>
+    </ul>
+</div>
+
+<div class="span11">
+<div class="hero-unit">
+    <h1>JAlert</h1>
+
+    <p>jQuery Plugin, Simple, flexible and powerful!</p>
+    <!--<p>
+        <a id="alert1" class="btn btn-primary btn-large">
+            Simple demo
+        </a>
+    </p>-->
+</div>
+
+<section id="alert_popup">
+<!--<div class="page-header">
+    <h1>Alert popup</h1>
+</div>-->
+<h2>Simple alert</h2>
+
+<p>
+
+</p>
+
+<div class="bs-docs-example">
+    <button id="sa1" class="btn btn-info">Example</button>
+</div>
+        <pre class="prettyprint linenums lang-html">
+Css and JS in head tag:
+&lt;link href=&quot;alert.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;alert.js&quot;&gt;&lt;/script&gt;
+
+Html:
+&lt;button id=&quot;sa1&quot;&gt;Example&lt;/button&gt;
+
+JavaScript:
+&lt;script type="text/javascript" language="javascript"&gt;
+    $(document).ready(function () {
+        $(&quot;#sa1&quot;).click(function(){
+            $.alert(&quot;&quot;, &quot;Message&quot;, &quot;\&quot;&lt;b&gt;Example&lt;/b&gt;\&quot; button is clicked&quot;, &quot;message&quot;, 0);
+        });
+    });
+&lt;/script&gt;</pre>
+
+
+<a id="auto_hide"></a>
+
+<h2>Alert with auto hide</h2>
+
+<p>
+    Default: 5 seconds. Set 0 to not auto hide.
+</p>
+
+<div class="bs-docs-example">
+    <button id="sa2" class="btn btn-info">Example</button>
+</div>
+        <pre class="prettyprint linenums lang-html">
+Css and JS in head tag:
+&lt;link href=&quot;alert.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;alert.js&quot;&gt;&lt;/script&gt;
+
+Html:
+&lt;button id=&quot;sa2&quot;&gt;Example&lt;/button&gt;
+
+JavaScript:
+&lt;script type="text/javascript" language="javascript"&gt;
+    $(document).ready(function () {
+        $(&quot;#sa2&quot;).click(function(){
+            //Automatically hidden after 2 seconds.
+            $.alert(&quot;&quot;, &quot;Message&quot;, &quot;\&quot;&lt;b&gt;Example&lt;/b&gt;\&quot; button is clicked&quot;, &quot;message&quot;, 2000);
+        });
+    });
+&lt;/script&gt;</pre>
+
+
+<a id="alert_key"></a>
+
+<h2>Alert one time</h2>
+
+<p>
+    Used in case the function is called multiple times, but only display one popup.
+</p>
+
+<div class="bs-docs-example">
+    <button id="sa3" class="btn btn-info">Example</button>
+    <button id="sa4" class="btn btn-info">Example 2</button>
+</div>
+        <pre class="prettyprint linenums lang-html">
+Css and JS in head tag:
+&lt;link href=&quot;alert.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;alert.js&quot;&gt;&lt;/script&gt;
+
+Html:
+&lt;button id=&quot;sa3&quot;&gt;Example&lt;/button&gt;
+&lt;button id=&quot;sa4&quot;&gt;Example 2&lt;/button&gt;
+
+JavaScript:
+&lt;script type="text/javascript" language="javascript"&gt;
+    $(document).ready(function () {
+        $(&quot;#sa3&quot;).click(function(){
+            $.alert(&quot;only&quot;, &quot;Message&quot;, &quot;\&quot;&lt;b&gt;Example&lt;/b&gt;\&quot; button is clicked&quot;, &quot;message&quot;, 0);
+            $.alert(&quot;only&quot;, &quot;Message&quot;, &quot;\&quot;&lt;b&gt;Example&lt;/b&gt;\&quot; button is clicked, again&quot;, &quot;message&quot;, 0);
+        });
+        $(&quot;#sa4&quot;).click(function(){
+            $.alert(&quot;anything&quot;, &quot;Message&quot;, &quot;\&quot;&lt;b&gt;Example 2&lt;/b&gt;\&quot; button is clicked&quot;, &quot;message&quot;, 0);
+            $.alert(&quot;anything&quot;, &quot;Message&quot;, &quot;\&quot;&lt;b&gt;Example 2&lt;/b&gt;\&quot; button is clicked, again&quot;, &quot;message&quot;, 0);
+        });
+    });
+&lt;/script&gt;</pre>
+
+
+<a id="alert_type"></a>
+
+<h2>Alert type</h2>
+
+<p>
+    Types: Message, Info, Success, Warning, Alert, Error, Danger
+</p>
+
+<div class="bs-docs-example">
+    <button id="sa5" class="btn btn-info">Message</button>
+    <button id="sa6" class="btn">Information</button>
+    <button id="sa7" class="btn btn-success">Success</button>
+    <button id="sa8" class="btn btn-warning">Warning, Alert</button>
+    <button id="sa9" class="btn btn-danger">Error, Danger</button>
+</div>
+        <pre class="prettyprint linenums lang-html">
+Css and JS in head tag:
+&lt;link href=&quot;alert.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;alert.js&quot;&gt;&lt;/script&gt;
+
+Html:
+&lt;button id=&quot;sa5&quot;&gt;Message&lt;/button&gt;<br/>
+&lt;button id=&quot;sa6&quot;&gt;Information&lt;/button&gt;<br/>
+&lt;button id=&quot;sa7&quot;&gt;Success&lt;/button&gt;<br/>
+&lt;button id=&quot;sa8&quot;&gt;Warning, Alert&lt;/button&gt;<br/>
+&lt;button id=&quot;sa9&quot;&gt;Error, Danger&lt;/button&gt;
+
+JavaScript:
+&lt;script type="text/javascript" language="javascript"&gt;
+    $(document).ready(function () {
+        $(&quot;#sa5&quot;).click(function(){
+            $.alert(&quot;&quot;, &quot;Message&quot;, &quot;\&quot;&lt;b&gt;Message&lt;/b&gt;\&quot; button is clicked&quot;, &quot;message&quot;, 0);
+        });
+        $(&quot;#sa6&quot;).click(function(){
+            $.alert(&quot;&quot;, &quot;Information&quot;, &quot;\&quot;&lt;b&gt;Information&lt;/b&gt;\&quot; button is clicked&quot;, &quot;info&quot;, 0);
+        });
+        $(&quot;#sa7&quot;).click(function(){
+            $.alert(&quot;&quot;, &quot;Success&quot;, &quot;\&quot;&lt;b&gt;Success&lt;/b&gt;\&quot; button is clicked&quot;, &quot;success&quot;, 0);
+        });
+        $(&quot;#sa8&quot;).click(function(){
+            $.alert(&quot;&quot;, &quot;Warning&quot;, &quot;\&quot;&lt;b&gt;Warning, Alert&lt;/b&gt;\&quot; button is clicked&quot;, &quot;alert&quot;, 0);
+        });
+        $(&quot;#sa9&quot;).click(function(){
+            $.alert(&quot;&quot;, &quot;Error&quot;, &quot;\&quot;&lt;b&gt;Error, Danger&lt;/b&gt;\&quot; button is clicked&quot;, &quot;error&quot;, 0);
+        });
+    });
+&lt;/script&gt;</pre>
+
+
+<a id="alert_top"></a>
+
+<h2>Top alert</h2>
+
+<p>
+    Alert show in top page.
+</p>
+
+<div class="bs-docs-example">
+    <button id="sa10" class="btn btn-info">Example</button>
+    <button id="sa11" class="btn btn-warning">Example</button>
+    <button id="sa12" class="btn btn-success">Example</button>
+</div>
+        <pre class="prettyprint linenums lang-html">
+Css and JS in head tag:
+&lt;link href=&quot;alert.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;alert.js&quot;&gt;&lt;/script&gt;
+
+Html:
+&lt;button id=&quot;sa10&quot;&gt;Example&lt;/button&gt;
+&lt;button id=&quot;sa11&quot;&gt;Example&lt;/button&gt;
+&lt;button id=&quot;sa12&quot;&gt;Example&lt;/button&gt;
+
+JavaScript:
+&lt;script type="text/javascript" language="javascript"&gt;
+    $(document).ready(function () {
+        $(&quot;#sa10&quot;).click(function(){
+            $.alert(&quot;&quot;, &quot;&quot;, &quot;\&quot;&lt;b&gt;Example&lt;/b&gt;\&quot; button is clicked&quot;, &quot;message&quot;, 0);
+        });
+        $(&quot;#sa11&quot;).click(function(){
+            //Only one time.
+            $.alert(&quot;anything&quot;, &quot;&quot;, &quot;\&quot;&lt;b&gt;Example&lt;/b&gt;\&quot; button is clicked&quot;, &quot;warning&quot;, 0);
+        });
+        $(&quot;#sa12&quot;).click(function(){
+            //Automatically hidden after 3.5 seconds.
+            $.alert(&quot;&quot;, &quot;&quot;, &quot;\&quot;&lt;b&gt;Example&lt;/b&gt;\&quot; button is clicked&quot;, &quot;success&quot;, 3500);
+        });
+    });
+&lt;/script&gt;</pre>
+
+
+<a id="alert_flat"></a>
+
+<h2>Flat alert</h2>
+
+<p>
+    Alert show in any where.
+</p>
+
+<div class="bs-docs-example">
+    <div id="msw"></div>
+    <button id="sa13" class="btn btn-info">Example</button>
+    <button id="sa14" class="btn btn-warning">Example</button>
+    <button id="sa15" class="btn btn-success">Example</button>
+</div>
+        <pre class="prettyprint linenums lang-html">
+Css and JS in head tag:
+&lt;link href=&quot;alert.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;alert.js&quot;&gt;&lt;/script&gt;
+
+Html:
+&lt;div id=&quot;msw&quot;&gt;&lt;/div&gt;
+&lt;button id=&quot;sa13&quot;&gt;Example&lt;/button&gt;
+&lt;button id=&quot;sa14&quot;&gt;Example&lt;/button&gt;
+&lt;button id=&quot;sa15&quot;&gt;Example&lt;/button&gt;
+
+JavaScript:
+&lt;script type="text/javascript" language="javascript"&gt;
+    $(document).ready(function () {
+        $(&quot;#sa13&quot;).click(function(){
+            $.alert(&quot;&quot;, &quot;&quot;, &quot;\&quot;&lt;b&gt;Example&lt;/b&gt;\&quot; button is clicked&quot;, &quot;message&quot;, 0, "#msw");
+        });
+        $(&quot;#sa14&quot;).click(function(){
+            //Only one time.
+            $.alert(&quot;anything&quot;, &quot;&quot;, &quot;\&quot;&lt;b&gt;Example&lt;/b&gt;\&quot; button is clicked&quot;, &quot;warning&quot;, 0, "#msw");
+        });
+        $(&quot;#sa15&quot;).click(function(){
+            //Automatically hidden after 3.5 seconds.
+            $.alert(&quot;&quot;, &quot;Success&quot;, &quot;\&quot;&lt;b&gt;Example&lt;/b&gt;\&quot; button is clicked&quot;, &quot;success&quot;, 3500, "#msw");
+        });
+    });
+&lt;/script&gt;</pre>
+
+
+<a id="popup_window"></a>
+
+<h2>Confirm popup</h2>
+
+<p>
+    Popup with the button and the button click event.
+</p>
+
+<div class="bs-docs-example">
+    <div id="msw2"></div>
+    <button id="sa16" class="btn btn-info">Example</button>
+    <button id="sa17" class="btn btn-warning">Example</button>
+    <button id="sa18" class="btn btn-success">Example</button>
+</div>
+        <pre class="prettyprint linenums lang-html">
+Css and JS in head tag:
+&lt;link href=&quot;alert.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;alert.js&quot;&gt;&lt;/script&gt;
+
+Html:
+&lt;div id=&quot;msw2&quot;&gt;&lt;/div&gt;
+&lt;button id=&quot;sa16&quot;&gt;Example&lt;/button&gt;
+&lt;button id=&quot;sa17&quot;&gt;Example&lt;/button&gt;
+&lt;button id=&quot;sa18&quot;&gt;Example&lt;/button&gt;
+
+JavaScript:
+&lt;script type="text/javascript" language="javascript"&gt;
+    $(document).ready(function () {
+        $(&quot;#sa16&quot;).click(function(){
+            $.alert(&quot;&quot;, &quot;Confirm&quot;, &quot;\&quot;&lt;b&gt;Example&lt;/b&gt;\&quot; button is clicked&quot;, &quot;message&quot;, 0, "", [
+                {
+                    label: "Ok",
+                    click: function(){
+                        this.alertEnd();
+                        alert("Accept");
+                    }
+                },
+                {
+                    label: "Cancel",
+                    click: function(){
+                        this.alertEnd();
+                    }
+                }
+            ]);
+        });
+        $(&quot;#sa17&quot;).click(function(){
+            //Only one time.
+            $.alert(&quot;anything&quot;, &quot;Confirm&quot;, &quot;\&quot;&lt;b&gt;Example&lt;/b&gt;\&quot; button is clicked&quot;, &quot;warning&quot;, 0, "#msw2", [
+                {
+                    label: "Ok",
+                    click: function(){
+                        this.alertEnd();
+                        alert("Accept");
+                    }
+                },
+                {
+                    label: "Cancel",
+                    click: function(){
+                        this.alertEnd();
+                    }
+                }
+            ]);
+        });
+        $(&quot;#sa18&quot;).click(function(){
+            //Automatically hidden after 3.5 seconds.
+            $.alert(&quot;&quot;, &quot;&quot;, &quot;\&quot;&lt;b&gt;Example&lt;/b&gt;\&quot; button is clicked&quot;, &quot;success&quot;, 3500, "", [
+                {
+                    label: "Ok",
+                    click: function(){
+                        this.alertEnd();
+                        alert("Accept");
+                    }
+                },
+                {
+                    label: "Cancel",
+                    click: function(){
+                        this.alertEnd();
+                    }
+                }
+            ]);
+        });
+    });
+&lt;/script&gt;</pre>
+
+<a id="events"></a>
+
+<h2>Events</h2>
+
+<p>
+    Two events: show and hide.
+</p>
+
+<div class="bs-docs-example">
+    <button id="sa19" class="btn btn-info">Example</button>
+</div>
+        <pre class="prettyprint linenums lang-html">
+Css and JS in head tag:
+&lt;link href=&quot;alert.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;alert.js&quot;&gt;&lt;/script&gt;
+
+Html:
+&lt;button id=&quot;sa19&quot;&gt;Example&lt;/button&gt;
+
+JavaScript:
+&lt;script type="text/javascript" language="javascript"&gt;
+    $(document).ready(function () {
+        $(&quot;#sa19&quot;).click(function(){
+            $.alert(&quot;&quot;, &quot;Message&quot;, &quot;\&quot;&lt;b&gt;Example&lt;/b&gt;\&quot; button is clicked&quot;, &quot;message&quot;, 0, "", "", {
+                show:function () {
+                    alert("Message show.");
+                },
+                hide:function () {
+                    alert(this);
+                }
+            });
+        });
+    });
+&lt;/script&gt;</pre>
+
+
+<a id="what_button"></a>
+
+<h2>Button is clicked?</h2>
+
+<p>
+    Determine which button is clicked.
+</p>
+
+<div class="bs-docs-example">
+    <button id="sa20" class="btn btn-info">Example</button>
+</div>
+        <pre class="prettyprint linenums lang-html">
+Css and JS in head tag:
+&lt;link href=&quot;alert.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;alert.js&quot;&gt;&lt;/script&gt;
+
+Html:
+&lt;button id=&quot;sa20&quot;&gt;Example&lt;/button&gt;
+
+JavaScript:
+&lt;script type="text/javascript" language="javascript"&gt;
+    $(document).ready(function () {
+        $(&quot;#sa20&quot;).click(function(){
+            $.alert(&quot;&quot;, &quot;Message&quot;, &quot;\&quot;&lt;b&gt;Example&lt;/b&gt;\&quot; button is clicked&quot;, &quot;message&quot;, 0, "", [
+                {
+                    label: "Yes",
+                    click: function() {
+                        this.button = "Yes";
+                        this.alertEnd();
+                    }
+                },
+                {
+                    label: "No",
+                    click: function() {
+                        this.button = "No";
+                        this.alertEnd();
+                    }
+                },
+                {
+                    label: "Cancel",
+                    click: function() {
+                        this.button = "Cancel";
+                        this.alertEnd();
+                    }
+                }
+            ], {
+                show:function () {
+                    this.button = false;
+                },
+                hide:function () {
+                    alert(this.button);
+                }
+            });
+        });
+    });
+&lt;/script&gt;</pre>
+</section>
+
+</div>
+
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+
+</body>
+</html>

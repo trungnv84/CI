@@ -1,0 +1,196 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Google map</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <style type="text/css">
+        html {
+            height: 100%
+        }
+
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0
+        }
+
+        #map_canvas {
+            height: 100%
+        }
+    </style>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&language=vi&key="></script>
+</head>
+<body>
+<div id="map_canvas" style="width:100%; height:100%"></div>
+<script type="text/javascript">
+    var mapOptions = {
+        zoom:8,
+        center:new google.maps.LatLng(-34.397, 150.644),
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+    };
+    //var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+
+    if (typeof gMap !== 'function') {
+        function gMap(element, option) {
+            var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+
+            map.setWindowMaxWidth = function (width) {
+                this.windowMaxWidth = width;
+            }
+
+            map.markers = {};
+
+            map.marker = function (key, latLng, content, icon) {
+                var marker = new google.maps.Marker({
+                    position:latLng,
+                    icon:icon ? icon : this.icon,
+                    map:this
+                });
+
+                if (key || 0 === key) this.markers["m" + key] = marker;
+
+                marker.content = content;
+
+                marker.setWindowMaxWidth = function (width) {
+                    this.windowMaxWidth = width;
+                }
+
+                marker.showInfoWindow = function () {
+                    if (this.infoWindowShowed) return;
+                    if (this.map.infoWindow) {
+                        this.map.infoWindow.close();
+                        this.map.infoWindow.marker.infoWindowShowed = false;
+                    }
+                    if (this.content) {
+                        this.map.infoWindow = new google.maps.InfoWindow({
+                            content:content,
+                            maxWidth:this.windowMaxWidth ? this.windowMaxWidth : this.map.windowMaxWidth
+                        });
+                        google.maps.event.addListener(this.map.infoWindow, 'closeclick', function () {
+                            this.marker.infoWindowShowed = false;
+                        });
+                        this.infoWindowShowed = true;
+                        this.map.infoWindow.marker = this;
+                        this.map.infoWindow.open(this.map, this);
+                    }
+                }
+
+                marker.click = function (handles) {
+                    google.maps.event.addListener(this, 'click', handles);
+                }
+
+                marker.mouseover = function (handles) {
+                    google.maps.event.addListener(this, 'mouseover', handles);
+                }
+
+                return marker;
+            }
+
+            map.addMarker = function (markers, key) {
+                for (var i in markers) {
+                    var marker = false;
+
+                    if (key) {
+                        if (this.markers["m" + markers[i][key]]) {
+                            this.markers["m" + markers[i][key]].setVisible(true);
+                        } else {
+                            marker = this.marker(
+                                    markers[i][key],
+                                    new google.maps.LatLng(markers[i]["lat"], markers[i]["lng"]),
+                                    markers[i]["content"],
+                                    markers[i]["icon"]
+                            );
+                        }
+                    } else {
+                        marker = this.marker(
+                                null,
+                                new google.maps.LatLng(markers[i]["lat"], markers[i]["lng"]),
+                                markers[i]["content"],
+                                markers[i]["icon"]
+                        );
+                    }
+
+                    if (marker && marker.content) marker.click(function () {
+                        this.showInfoWindow();
+                    });
+                }
+            }
+
+            map.hideMarker = function (key) {
+                if (key) {
+                    if (this.markers["m" + key]) {
+                        if (this.markers["m" + key].infoWindowShowed) {
+                            this.infoWindow.close();
+                            this.markers["m" + key].infoWindowShowed = false;
+                        }
+                        if (this.markers["m" + key].getVisible()) {
+                            this.markers["m" + key].setVisible(false);
+                        }
+                    }
+                } else {
+                    if (this.infoWindow.marker.infoWindowShowed) {
+                        this.infoWindow.close();
+                        this.infoWindow.marker.infoWindowShowed = false;
+                    }
+                    for (var i in this.markers) {
+                        if (this.markers[i].getVisible()) {
+                            this.markers[i].setVisible(false);
+                        }
+                    }
+                }
+            }
+
+            /*map.boundsChanged = function (handles) {
+                google.maps.event.addListener(this, 'bounds_changed', handles);
+            }*/
+
+            google.maps.event.addListener(map, 'bounds_changed', function() {
+                if (this.boundsChangeEnd) clearTimeout(this.boundsChangeEnd);
+                this.boundsChangeEnd = setTimeout(function () {
+                    google.maps.event.trigger(map, 'bounds_changing_end')
+                }, 250);
+            });
+
+            map.boundsChangingEnd = function (handles) {
+                google.maps.event.addListener(this, 'bounds_changing_end', handles);
+            }
+
+            return map;
+        }
+    }
+
+
+    var map = gMap($("#map_canvas"), mapOptions);
+
+    var marker = map.marker(0, new google.maps.LatLng(-34.397, 150.644), "hello would! hello would! hello would! hello would! hello would! hello would! hello would! hello would! hello would! hello would! hello would! hello would! hello would! hello would! hello would! ");
+
+    marker.setWindowMaxWidth(300);
+    marker.mouseover(function () {
+        this.showInfoWindow();
+    });
+
+    //var marker2 = map.marker(null, new google.maps.LatLng(-35.397, 151.644));
+
+    map.addMarker(
+            [
+                {id:1, lat:-35.397, lng:151.644, content:"<div><strong>Dưới</strong></div>", icon: "http://static.foody.vn/style/images/icons/map-icons/blue-nha-hang.png"},
+                {id:2, lat:-33.397, lng:149.644, content:"<div>Trên</div>"},
+                {id:1, lat:-35.397, lng:151.644, content:"<div>Dưới</div>"},
+                {id:3, lat:-35.097, lng:151.044, content:"<div>Dưới</div>"}
+            ],
+            "id"
+    );
+
+
+    map.boundsChangingEnd(function () {
+        console.log(this.getBounds());
+        //load new markers
+    });
+
+    console.log(typeof gMap);
+
+</script>
+</body>
+</html>
