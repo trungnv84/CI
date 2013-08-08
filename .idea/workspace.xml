@@ -6,8 +6,8 @@
     </list>
     <ignored path="ci.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375936156900" ignored="false" />
-    <file path="/a.dummy" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375936281335" ignored="false" />
+    <file path="/Dummy.txt" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375944102267" ignored="false" />
+    <file path="/a.dummy" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375938612788" ignored="false" />
     <file path="/MY_Cart.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375158902372" ignored="false" />
     <file path="/Product_Controller.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375168760639" ignored="false" />
     <file path="/home.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375161355814" ignored="false" />
@@ -30,14 +30,14 @@
     <file path="/a.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375426994983" ignored="false" />
     <file path="$PROJECT_DIR$/../sc/sys/config.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375859542916" ignored="false" />
     <file path="$PROJECT_DIR$/../sc/index.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375860459157" ignored="false" />
-    <file path="/index.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375868341974" ignored="false" />
+    <file path="/index.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375944961251" ignored="false" />
     <file path="$PROJECT_DIR$/../sc/sys/controller/home.controller.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375858899587" ignored="false" />
     <file path="/home.controller.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375857222116" ignored="false" />
     <file path="$PROJECT_DIR$/../sc/sys/core/controller.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375868203582" ignored="false" />
-    <file path="/controller.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375868169020" ignored="false" />
+    <file path="/controller.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375944497518" ignored="false" />
     <file path="$PROJECT_DIR$/../sc/sys/core/object.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375860170838" ignored="false" />
     <file path="/object.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375851620340" ignored="false" />
-    <file path="$PROJECT_DIR$/../sc/public/index.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375868404085" ignored="false" />
+    <file path="$PROJECT_DIR$/../sc/public/index.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375945099478" ignored="false" />
     <file path="$PROJECT_DIR$/../sc/.htaccess" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375860511239" ignored="false" />
     <file path="$PROJECT_DIR$/../Tivitz/trunk/templates/js/main.js" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375873960573" ignored="false" />
     <file path="/layout_manually_submit_pledge_pre_approved.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375863812154" ignored="false" />
@@ -51,11 +51,18 @@
     <file path="/main.js" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375873909459" ignored="false" />
     <file path="$PROJECT_DIR$/../sc/sys/template/site/home/list.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375868089703" ignored="false" />
     <file path="/list.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375868078139" ignored="false" />
-    <file path="$PROJECT_DIR$/../sc/app/config.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375868255547" ignored="false" />
-    <file path="$PROJECT_DIR$/../sc/app/core/controller.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375868278359" ignored="false" />
+    <file path="$PROJECT_DIR$/../sc/app/config.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375944390675" ignored="false" />
+    <file path="$PROJECT_DIR$/../sc/app/core/controller.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375944987641" ignored="false" />
     <file path="$PROJECT_DIR$/../Tivitz/trunk/templates/layout_matches_available_earned_pre_approved.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375874028713" ignored="false" />
-    <file path="$PROJECT_DIR$/../sc/app/lib/format.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375936971791" ignored="false" />
+    <file path="$PROJECT_DIR$/../sc/app/lib/format.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375944828664" ignored="false" />
     <file path="/format.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375936568508" ignored="false" />
+    <file path="/html.view.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375944416563" ignored="false" />
+    <file path="$PROJECT_DIR$/../sc/app/view/html.view.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375944434958" ignored="false" />
+    <file path="$PROJECT_DIR$/../sc/app/template/site/html.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375938620011" ignored="false" />
+    <file path="$PROJECT_DIR$/../sc/app/template/site/layout.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375938620011" ignored="false" />
+    <file path="$PROJECT_DIR$/../sc/app/core/view.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375938620011" ignored="false" />
+    <file path="$PROJECT_DIR$/../sc/app/template/site/home/list.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375938620011" ignored="false" />
+    <file path="$PROJECT_DIR$/../sc/app/controller/home.controller.php" changelist="0037c332-2830-47bb-9a16-228358d72b5f" time="1375938620011" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +85,7 @@
       <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/config/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="31" selection-start="4433" selection-end="4457" vertical-scroll-proportion="-0.65384614">
+            <state line="94" column="31" selection-start="4433" selection-end="4457" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -87,7 +94,7 @@
       <file leaf-file-name="constants.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/config/constants.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="27" selection-start="2799" selection-end="2813" vertical-scroll-proportion="0.9785933">
+            <state line="77" column="27" selection-start="2799" selection-end="2813" vertical-scroll-proportion="0.6130268">
               <folding />
             </state>
           </provider>
@@ -96,7 +103,7 @@
       <file leaf-file-name="Router.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/system/core/Router.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="381" column="13" selection-start="9679" selection-end="9721" vertical-scroll-proportion="-0.65384614">
+            <state line="381" column="13" selection-start="9679" selection-end="9721" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -233,6 +240,72 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ci" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ci" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ci" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ci" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ci" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ci" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -316,14 +389,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32991454" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32115677" sideWeight="0.6700855" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33181125" sideWeight="0.6700855" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -332,6 +404,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32991454" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -458,42 +531,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/config/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="31" selection-start="4433" selection-end="4457" vertical-scroll-proportion="-0.65384614">
+        <state line="94" column="31" selection-start="4433" selection-end="4457" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system/core/Benchmark.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="16" selection-start="2823" selection-end="2823" vertical-scroll-proportion="2.0204678">
-          <folding />
-        </state>
+        <state line="109" column="16" selection-start="2823" selection-end="2823" vertical-scroll-proportion="2.0204678" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system/core/Output.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="363" column="115" selection-start="7865" selection-end="7908" vertical-scroll-proportion="0.36085626">
-          <folding />
-        </state>
+        <state line="363" column="115" selection-start="7865" selection-end="7908" vertical-scroll-proportion="0.36085626" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system/core/Router.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="381" column="13" selection-start="9679" selection-end="9721" vertical-scroll-proportion="-0.65384614">
+        <state line="381" column="13" selection-start="9679" selection-end="9721" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/admin/modules/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="117" selection-start="190" selection-end="204" vertical-scroll-proportion="0.051987767">
-          <folding />
-        </state>
+        <state line="1" column="117" selection-start="190" selection-end="204" vertical-scroll-proportion="0.051987767" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/config/constants.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="27" selection-start="2799" selection-end="2813" vertical-scroll-proportion="0.9785933">
+        <state line="77" column="27" selection-start="2799" selection-end="2813" vertical-scroll-proportion="0.6130268">
           <folding />
         </state>
       </provider>
