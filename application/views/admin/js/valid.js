@@ -143,7 +143,7 @@ if (jQuery && !jQuery.valid) {
                                 " " + invalid_id + " " + options.class.invalid + "'></i>")
                             if (options.invalidAttributes) invalid_tag.attr(options.invalidAttributes);
                             options.selector.after(invalid_tag);
-                            input.bind("input", function(){
+                            input.unbind("input").bind("input", function(){
                                 $.valid(input, rules, options);
                             });
                         }
